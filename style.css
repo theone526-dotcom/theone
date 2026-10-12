@@ -573,3 +573,130 @@ button:hover{
     text-align: center;
    
 }*/
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 18px 5%;
+    }
+
+
+    .nav-links {
+        gap: 12px;
+    }
+
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+
+    section {
+        padding: 100px 5%;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-top: 140px;
+    }
+
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+
+    .hero-image img {
+        width: 260px;
+
+        height: 260px;
+    }
+
+
+    /* About */
+
+    .about-content {
+        flex-direction: column;
+
+        gap: 40px;
+    }
+
+
+    /* Services */
+
+    .service-container {
+        flex-direction: column;
+    }
+
+
+    /* Contact */
+
+    .contact-container {
+        flex-direction: column;
+
+        gap: 40px;
+    }
+
+
+    .section-heading h2 {
+        font-size: 35px;
+    }
+
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 480px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+
+    .nav-links {
+        gap: 10px;
+    }
+
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+
+    .hero h2 {
+        font-size: 23px;
+    }
+
+
+    .hero-image img {
+        width: 220px;
+
+        height: 220px;
+    }
+
+
+    .footer-links {
+        flex-wrap: wrap;
+    }
+}
