@@ -679,6 +679,11 @@ button:hover{
     }
 
 
+    .hero {
+        flex-direction: column;
+    }
+
+
     .hero h1 {
         font-size: 42px;
     }
