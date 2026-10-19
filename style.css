@@ -1,3 +1,6 @@
+/* =========================
+   RESET
+========================= */
 
 * {
     margin: 0;
@@ -76,6 +79,7 @@ body {
 .nav-links a:hover {
     color: #6c4df6;
 }
+
 
 /* =========================
    GENERAL
@@ -187,7 +191,7 @@ section {
 
     object-fit: cover;
 
-    border-radius: 10%;
+    border-radius: 50%;
 
     border: 8px solid white;
 
@@ -221,7 +225,6 @@ section {
 
     transform: translateY(-3px);
 }
-
 /* =========================
    ABOUT
 ========================= */
@@ -254,18 +257,10 @@ section {
 
 .about-text p {
     color: #666;
+
+    margin-bottom: 20px;
 }
-.about-image {
-     
-    width: 20px;
-    height: 20px;
 
-    object-fit: cover;
-
-    border-radius: 10%;
-
-    border: 8px solid white;
-}
 
 .skills {
     flex: 1;
@@ -383,8 +378,7 @@ section {
     font-size: 35px;
 
     margin-bottom: 20px;
-}
-.contact-text p {
+}.contact-text p {
     color: #666;
 
     margin-bottom: 20px;
@@ -450,7 +444,6 @@ section {
 .contact-form button:hover {
     background: #5034d4;
 }
-
 
 /* =========================
    FOOTER
@@ -519,147 +512,82 @@ footer {
     color: #777;
 }
 
-   /* background-image: url("Logo\ Mockup\ on\ iron\ wall.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; */
- /*
-    background: linear-gradient(to left, red, blue);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-*/
-
-/*
-
-#heading{
-    color:red;
-    margin-top: 40px;
-    font-size: 60px;
-}
-.text{
-    color:blue;
-    margin-top: 40px;
-    font-size: 22px;
-}
-button{
-    background-color:purple;
-    color:white;
-    padding: 15px 35px;
-    border: none;
-    border-radius: 100%;
-    margin-top: 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-body{
-    margin:30px;
-    margin-top: 40px;
-    text-align: center;
-    background-color: #f5f5f5;
-}
-button:hover{
-    background-color: darkviolet;
-}
-.omo{
-    background-color: red;
-    padding: 20px;
-    width: 300px;
-    margin: 30px auto;
-    border-radius: 10px;
-    border: 3px solid black;
-    text-align: center;
-   
-}*/
-
-@media (max-width: 768px) {
-
-    .navbar {
-        padding: 18px 5%;
-    }
-
-
-    .nav-links {
-        gap: 12px;
-    }
-
-
-    .nav-links a {
-        font-size: 14px;
-    }
-
-
-    section {
-        padding: 100px 5%;
-    }
-
-
-    /* Hero */
-
-    .hero {
-        flex-direction: column;
-
-        text-align: center;
-
-        padding-top: 140px;
-    }
-
-
-    .hero h1 {
-        font-size: 50px;
-    }
-
-
-    .hero h2 {
-        font-size: 27px;
-    }
-
-
-    .hero-image img {
-        width: 260px;
-
-        height: 260px;
-    }
-
-
-    /* About */
-
-    .about-content {
-        flex-direction: column;
-
-        gap: 40px;
-    }
-
-
-    /* Services */
-
-    .service-container {
-        flex-direction: column;
-    }
-
-
-    /* Contact */
-
-    .contact-container {
-        flex-direction: column;
-
-        gap: 40px;
-    }
-
-
-    .section-heading h2 {
-        font-size: 35px;
-    }
-
-}
-
 
 /* =========================
-   SMALL PHONES
+   RESPONSIVE DESIGN
 ========================= */
+@media (max-width: 768px) {
+    
+        .navbar {
+            padding: 18px 5%;
+        }
+        .nav-links {
+            gap: 12px;
+        }
+        .nav-links a {
+            font-size: 14px;
+        }
 
+        section {
+            padding: 100px 5%;
+        }
+
+        /* Hero */
+        .hero {
+            flex-direction: column;
+
+            text-align: center;
+        
+            padding-top: 140px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+        }
+
+        .hero h2 {
+            font-size: 27px;
+        }
+
+        .hero-image img{
+            width: 260px;
+
+            height: 260px;
+        }
+
+        /* About */
+
+        .about-content {
+            flex-direction: column;
+
+            gap: 40px;
+        }
+
+        /* Services */
+
+        .service-container {
+            flex-direction: column;
+        }
+
+        /* Contact */
+
+        .contact-container {
+            flex-direction: column;
+
+            gap: 40px;
+        }
+
+        .section-heading h2 {
+            font-size: 35px;
+        }
+
+    }
+
+
+
+    /* =========================
+    SMALL PHONES
+========================= */
 @media (max-width: 480px) {
 
     .navbar {
@@ -668,88 +596,31 @@ button:hover{
         gap: 10px;
     }
 
-
     .nav-links {
         gap: 10px;
     }
-
 
     .nav-links a {
         font-size: 12px;
     }
 
-
-    .hero {
-        flex-direction: column;
-    }
-
-
     .hero h1 {
         font-size: 42px;
     }
-
 
     .hero h2 {
         font-size: 23px;
     }
 
-
     .hero-image img {
         width: 220px;
 
-        height: 220px;
+        height: 200px;
     }
-
 
     .footer-links {
         flex-wrap: wrap;
     }
-}
 
 
-@media (min-width: 768px) {
-
-    .hero h1 {
-        font-size: 35px;
-    }
-    
-.about {
-    background: white;
-}
-
-
-.about-content {
-    display: flex;
-
-    justify-content: space-between;
-
-    gap: 80px;
-}
-
-.about-text {
-    flex: 1;
-}
-
-
-.about-text h3 {
-    font-size: 30px;
-
-    margin-bottom: 20px;
-}
-
-
-.about-text p {
-    color: #666;
-}
-.about-image {
-     
-    width: 200px;
-    height: 100px;
-
-    object-fit: cover;
-
-    border-radius: 10%;
-
-    border: 8px solid white;
-}
 }
